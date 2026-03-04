@@ -7,12 +7,13 @@
 package sdkws
 
 import (
-	wrapperspb "github.com/openimsdk/protocol/wrapperspb"
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	wrapperspb "github.com/Chheangseng/grpc-protocol-share/wrapperspb"
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -6124,7 +6125,7 @@ const file_sdkws_sdkws_proto_rawDesc = "" +
 	"\x0fconversationIDs\x18\x02 \x03(\tR\x0fconversationIDs*0\n" +
 	"\tPullOrder\x12\x10\n" +
 	"\fPullOrderAsc\x10\x00\x12\x11\n" +
-	"\rPullOrderDesc\x10\x01B%Z#github.com/openimsdk/protocol/sdkwsb\x06proto3"
+	"\rPullOrderDesc\x10\x01B%Z#github.com/Chheangseng/grpc-protocol-share/sdkwsb\x06proto3"
 
 var (
 	file_sdkws_sdkws_proto_rawDescOnce sync.Once

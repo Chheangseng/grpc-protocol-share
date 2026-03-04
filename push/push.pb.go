@@ -7,12 +7,13 @@
 package push
 
 import (
-	sdkws "github.com/openimsdk/protocol/sdkws"
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
 	unsafe "unsafe"
+
+	sdkws "github.com/Chheangseng/grpc-protocol-share/sdkws"
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (
@@ -225,7 +226,7 @@ const file_push_push_proto_rawDesc = "" +
 	"\x14DelUserPushTokenResp2\xa7\x01\n" +
 	"\x0ePushMsgService\x12<\n" +
 	"\aPushMsg\x12\x17.openim.push.PushMsgReq\x1a\x18.openim.push.PushMsgResp\x12W\n" +
-	"\x10DelUserPushToken\x12 .openim.push.DelUserPushTokenReq\x1a!.openim.push.DelUserPushTokenRespB$Z\"github.com/openimsdk/protocol/pushb\x06proto3"
+	"\x10DelUserPushToken\x12 .openim.push.DelUserPushTokenReq\x1a!.openim.push.DelUserPushTokenRespB$Z\"github.com/Chheangseng/grpc-protocol-share/pushb\x06proto3"
 
 var (
 	file_push_push_proto_rawDescOnce sync.Once

@@ -3,7 +3,7 @@ package auth
 import (
 	"errors"
 
-	"github.com/openimsdk/protocol/constant"
+	"github.com/Chheangseng/grpc-protocol-share/constant"
 )
 
 func (x *GetAdminTokenReq) Check() error {

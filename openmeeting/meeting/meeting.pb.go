@@ -7,11 +7,12 @@
 package meeting
 
 import (
-	wrapperspb "github.com/openimsdk/protocol/wrapperspb"
-	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
-	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
 	sync "sync"
+
+	wrapperspb "github.com/Chheangseng/grpc-protocol-share/wrapperspb"
+	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
+	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
 
 const (

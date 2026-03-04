@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/openimsdk/protocol/constant"
+	"github.com/Chheangseng/grpc-protocol-share/constant"
 )
 
 func (x *GetPaginationFriendsReq) Check() error {
