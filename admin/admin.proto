@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+package admin;
+
+// Set this to your actual module path
+option go_package = "github.com/MetaElevenPhnomPenh/protocol/admin";
+
+service AdminService {
+  // Logs a user in and returns a set of tokens
+  rpc Login (LoginRequest) returns (AuthResponse);
+
+  // Registers a new admin/user and returns tokens immediately
+  rpc Register (RegisterRequest) returns (AuthResponse);
+
+  // Invalidates a specific session
+  rpc Logout (LogoutRequest) returns (EmptyResponse);
+
+  // Updates the user password
+  rpc ResetPassword (ResetPasswordRequest) returns (EmptyResponse);
+}
+
+// --- Shared Messages ---
+
+message AuthResponse {
+  string access_token = 1;
+  int32 expire_in = 2;
+  string refresh_token = 3;
+  int32 refresh_token_expire_in = 4;
+}
+
+message EmptyResponse {}
+
+// --- Request Messages ---
+
+message LoginRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message RegisterRequest {
+  string username = 1;
+  string password = 2;
+  string first_name = 3;
+  string last_name = 4;
+  string email = 5;
+}
+
+message LogoutRequest {
+  string jwtId = 1;
+}
+
+message ResetPasswordRequest {
+  string user_id = 1;
+  string old_password = 2;
+  string new_password = 3;
+}
